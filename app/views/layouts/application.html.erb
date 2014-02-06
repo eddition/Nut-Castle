@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NutCastle</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <link href='http://fonts.googleapis.com/css?family=Montserrat+Alternates|Paprika|Architects+Daughter' rel='stylesheet' type='text/css'>
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div id='wrapper'>
+    <div id='top-border'>
+    </div>
+    <div class="row" id='header'>
+      <h1 id="home-name">Nut Castle</h1>
+      <h5 id='tag-line'>The Finest Cofectionery Goods in NYC</h5>
+      <div class='row' id='navigation'>
+        <ul>
+          <a href="/"><li>Home</li></a>
+          <li>|</li>
+          <a href="/about"><li>About</li></a>
+          <li>|</li>
+          <a href="/candy"><li>Candy</li></a>
+          <li>|</li>
+          <a href="/chocolate"><li>Chocolate</li></a>
+          <li>|</li>
+          <a href="/fruitsnuts"><li>Fruits & Nuts</li></a>
+          <li>|</li>
+          <a href="/contact"><li>Contact Us</li></a>
+          <br>
+          <hr style="border-top: dotted 2px" align="center" width="50%">
+        </ul>
+      </div>
+    </div>
+
+    <div id='main-container'>
+      <%= yield %>
+    </div>
+
+    <div id='footer'>
+      <p>&copy; Nut Castle 2014</p>
+    </div>
+  </div>
+</body>
+</html>
